@@ -17,7 +17,7 @@ The full package contains the [server](server/) code (PHP) and [iOS](iOS/) code 
 </p>
 
 
-The app had been downloaded 1375 times, out of 1447 product page views (95% of product page views resulted in download). Considering NYU Abu Dhabi has a small student body of 200 per class. This app has achieved high coverage on campus.
+The app had been downloaded 1375 times, out of 1447 product page views (95% of product page views resulted in download). Considering NYU Abu Dhabi has a small student body of 200 per class. This app has achieved high coverage on campus. __Unfortunately, this app is no longer in the app store, after my Appple Developer Program expired.__ I am looking for interested party to transfer the app ownership and source code.
 
 <p align="center">
     <img src="img/analytics.png" width="800">
