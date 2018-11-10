@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  GPACalculator
+
+  Created by Xiao on 7/25/16.
+  Copyright © 2016 Xiao Lu. All rights reserved.
+*/
+"CFBundleDisplayName" = "GPA Monitor";

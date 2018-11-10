@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-Xq-P2S">
+                                <rect key="frame" x="-84" y="-40" width="488" height="668"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NYU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAK-6s-79j">
+                                <rect key="frame" x="112.5" y="173.5" width="95" height="61"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="51"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPA Monitor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-Lx-ufa">
+                                <rect key="frame" x="114.5" y="243" width="91.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JAK-6s-79j" firstAttribute="top" secondItem="XNc-Lx-ufa" secondAttribute="bottom" constant="8" id="0Id-TO-sem"/>
+                            <constraint firstItem="Fe6-Xq-P2S" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-100" id="5aI-j0-8ch"/>
+                            <constraint firstItem="JAK-6s-79j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6zE-7O-oBj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fe6-Xq-P2S" secondAttribute="trailing" constant="-100" id="9Fq-Kv-tjX"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Fe6-Xq-P2S" secondAttribute="bottom" constant="-60" id="AqH-th-HCm"/>
+                            <constraint firstItem="Fe6-Xq-P2S" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-60" id="RNC-3e-LbK"/>
+                            <constraint firstItem="JAK-6s-79j" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="elu-Zd-IPl"/>
+                            <constraint firstItem="XNc-Lx-ufa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-120" id="mnF-gV-CkX"/>
+                            <constraint firstItem="XNc-Lx-ufa" firstAttribute="top" secondItem="JAK-6s-79j" secondAttribute="bottom" constant="8" id="qwt-SA-qS8"/>
+                            <constraint firstItem="XNc-Lx-ufa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ttC-cQ-Rg0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Id-TO-sem"/>
+                                <exclude reference="mnF-gV-CkX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="557" height="295"/>
+    </resources>
+</document>

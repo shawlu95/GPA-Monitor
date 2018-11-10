@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111238301D427B7B009B41DC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1112382F1D427B7B009B41DC /* CoreData.framework */; };
+		111238331D427B93009B41DC /* Course.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 111238311D427B93009B41DC /* Course.xcdatamodeld */; };
+		112C68D61D3FBFEB00CDDABF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C68D51D3FBFEB00CDDABF /* main.m */; };
+		112C68D91D3FBFEB00CDDABF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C68D81D3FBFEB00CDDABF /* AppDelegate.m */; };
+		112C68DF1D3FBFEB00CDDABF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C68DD1D3FBFEB00CDDABF /* Main.storyboard */; };
+		112C68E11D3FBFEB00CDDABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112C68E01D3FBFEB00CDDABF /* Assets.xcassets */; };
+		112C68E41D3FBFEB00CDDABF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112C68E21D3FBFEB00CDDABF /* LaunchScreen.storyboard */; };
+		112C68EF1D3FBFEB00CDDABF /* GPACalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C68EE1D3FBFEB00CDDABF /* GPACalculatorTests.m */; };
+		112C68FA1D3FBFEB00CDDABF /* GPACalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C68F91D3FBFEB00CDDABF /* GPACalculatorUITests.m */; };
+		115A7B681D45349100FE9219 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 115A7B671D45349100FE9219 /* InfoPlist.strings */; };
+		1160CA341D53B57800DF2D80 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160CA331D53B57800DF2D80 /* SettingCell.m */; };
+		11C2C5141D43F0FD007EDE8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C2C5131D43F0FD007EDE8E /* UIViewController+BackButtonHandler.m */; };
+		11CD72561D5A34220069706B /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD724B1D5A34220069706B /* Course.m */; };
+		11CD72571D5A34220069706B /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD724D1D5A34220069706B /* Course+CoreDataProperties.m */; };
+		11CD72581D5A34220069706B /* DateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD724F1D5A34220069706B /* DateUtilities.m */; };
+		11CD72621D5A34450069706B /* CourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD725D1D5A34450069706B /* CourseCell.m */; };
+		11CD72641D5A34450069706B /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD72611D5A34450069706B /* TextFieldCell.m */; };
+		11CD726F1D5A34750069706B /* CoursesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD72661D5A34750069706B /* CoursesVC.m */; };
+		11CD72701D5A34750069706B /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD72681D5A34750069706B /* DetailVC.m */; };
+		11CD72721D5A34750069706B /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD726C1D5A34750069706B /* NavigationController.m */; };
+		11CD72731D5A34750069706B /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CD726E1D5A34750069706B /* SettingsVC.m */; };
+		45CD0BE6C48B163B6A05790D /* libPods-GPACalculatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0806D7B646C36634AFA9352E /* libPods-GPACalculatorTests.a */; };
+		B1A06764D69E76E0AF08D5F4 /* libPods-GPACalculatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E30A4FC7C2A147DDFD6EE9 /* libPods-GPACalculatorUITests.a */; };
+		E73B7334D47BB98218573E48 /* libPods-GPACalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F88DB5FBE63033AE53FEDB0 /* libPods-GPACalculator.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		112C68EB1D3FBFEB00CDDABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112C68C91D3FBFEB00CDDABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112C68D01D3FBFEB00CDDABF;
+			remoteInfo = GPACalculator;
+		};
+		112C68F61D3FBFEB00CDDABF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 112C68C91D3FBFEB00CDDABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112C68D01D3FBFEB00CDDABF;
+			remoteInfo = GPACalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0806D7B646C36634AFA9352E /* libPods-GPACalculatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPACalculatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0935F9E6CDA4156DF599AA91 /* Pods-GPACalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPACalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPACalculatorTests/Pods-GPACalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		1112382F1D427B7B009B41DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		111238321D427B93009B41DC /* Course.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Course.xcdatamodel; sourceTree = "<group>"; };
+		112C68D11D3FBFEB00CDDABF /* GPACalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPACalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		112C68D51D3FBFEB00CDDABF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		112C68D71D3FBFEB00CDDABF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		112C68D81D3FBFEB00CDDABF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		112C68DE1D3FBFEB00CDDABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		112C68E01D3FBFEB00CDDABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		112C68E31D3FBFEB00CDDABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		112C68E51D3FBFEB00CDDABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112C68EA1D3FBFEB00CDDABF /* GPACalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPACalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		112C68EE1D3FBFEB00CDDABF /* GPACalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPACalculatorTests.m; sourceTree = "<group>"; };
+		112C68F01D3FBFEB00CDDABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112C68F51D3FBFEB00CDDABF /* GPACalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPACalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		112C68F91D3FBFEB00CDDABF /* GPACalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPACalculatorUITests.m; sourceTree = "<group>"; };
+		112C68FB1D3FBFEB00CDDABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115A7B5E1D452ADD00FE9219 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		115A7B671D45349100FE9219 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		1160CA321D53B57800DF2D80 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingCell.h; path = Views/SettingCell.h; sourceTree = "<group>"; };
+		1160CA331D53B57800DF2D80 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingCell.m; path = Views/SettingCell.m; sourceTree = "<group>"; };
+		11C2C5121D43F0FD007EDE8E /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		11C2C5131D43F0FD007EDE8E /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		11CD724A1D5A34220069706B /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Course.h; path = Models/Course.h; sourceTree = "<group>"; };
+		11CD724B1D5A34220069706B /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Course.m; path = Models/Course.m; sourceTree = "<group>"; };
+		11CD724C1D5A34220069706B /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Course+CoreDataProperties.h"; path = "Models/Course+CoreDataProperties.h"; sourceTree = "<group>"; };
+		11CD724D1D5A34220069706B /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Course+CoreDataProperties.m"; path = "Models/Course+CoreDataProperties.m"; sourceTree = "<group>"; };
+		11CD724E1D5A34220069706B /* DateUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateUtilities.h; path = Models/DateUtilities.h; sourceTree = "<group>"; };
+		11CD724F1D5A34220069706B /* DateUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateUtilities.m; path = Models/DateUtilities.m; sourceTree = "<group>"; };
+		11CD725C1D5A34450069706B /* CourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseCell.h; path = Views/CourseCell.h; sourceTree = "<group>"; };
+		11CD725D1D5A34450069706B /* CourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseCell.m; path = Views/CourseCell.m; sourceTree = "<group>"; };
+		11CD72601D5A34450069706B /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldCell.h; path = Views/TextFieldCell.h; sourceTree = "<group>"; };
+		11CD72611D5A34450069706B /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldCell.m; path = Views/TextFieldCell.m; sourceTree = "<group>"; };
+		11CD72651D5A34750069706B /* CoursesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoursesVC.h; path = Controllers/CoursesVC.h; sourceTree = "<group>"; };
+		11CD72661D5A34750069706B /* CoursesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoursesVC.m; path = Controllers/CoursesVC.m; sourceTree = "<group>"; };
+		11CD72671D5A34750069706B /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailVC.h; path = Controllers/DetailVC.h; sourceTree = "<group>"; };
+		11CD72681D5A34750069706B /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailVC.m; path = Controllers/DetailVC.m; sourceTree = "<group>"; };
+		11CD726B1D5A34750069706B /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationController.h; path = Controllers/NavigationController.h; sourceTree = "<group>"; };
+		11CD726C1D5A34750069706B /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationController.m; path = Controllers/NavigationController.m; sourceTree = "<group>"; };
+		11CD726D1D5A34750069706B /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsVC.h; path = Controllers/SettingsVC.h; sourceTree = "<group>"; };
+		11CD726E1D5A34750069706B /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsVC.m; path = Controllers/SettingsVC.m; sourceTree = "<group>"; };
+		2BF550BE7478908ED3FC4EAF /* Pods-GPACalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPACalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPACalculator/Pods-GPACalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		3F88DB5FBE63033AE53FEDB0 /* libPods-GPACalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPACalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E30A4FC7C2A147DDFD6EE9 /* libPods-GPACalculatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPACalculatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55199130CD764B71069E3C2E /* Pods-GPACalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPACalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPACalculatorTests/Pods-GPACalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		98C9A33F3B464F93EA5E7388 /* Pods-GPACalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPACalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPACalculatorUITests/Pods-GPACalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AE399F77CF387C460EA9D342 /* Pods-GPACalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPACalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPACalculator/Pods-GPACalculator.release.xcconfig"; sourceTree = "<group>"; };
+		E36D59B5FB0EFF2532FDE000 /* Pods-GPACalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPACalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPACalculatorUITests/Pods-GPACalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		112C68CE1D3FBFEB00CDDABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111238301D427B7B009B41DC /* CoreData.framework in Frameworks */,
+				E73B7334D47BB98218573E48 /* libPods-GPACalculator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C68E71D3FBFEB00CDDABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45CD0BE6C48B163B6A05790D /* libPods-GPACalculatorTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C68F21D3FBFEB00CDDABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A06764D69E76E0AF08D5F4 /* libPods-GPACalculatorUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112C68C81D3FBFEB00CDDABF = {
+			isa = PBXGroup;
+			children = (
+				1112382F1D427B7B009B41DC /* CoreData.framework */,
+				112C68D31D3FBFEB00CDDABF /* GPACalculator */,
+				112C68ED1D3FBFEB00CDDABF /* GPACalculatorTests */,
+				112C68F81D3FBFEB00CDDABF /* GPACalculatorUITests */,
+				112C68D21D3FBFEB00CDDABF /* Products */,
+				1724BB7DCF40A89604300C74 /* Frameworks */,
+				EACCB9B2AAFC99793CF094E0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		112C68D21D3FBFEB00CDDABF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				112C68D11D3FBFEB00CDDABF /* GPACalculator.app */,
+				112C68EA1D3FBFEB00CDDABF /* GPACalculatorTests.xctest */,
+				112C68F51D3FBFEB00CDDABF /* GPACalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		112C68D31D3FBFEB00CDDABF /* GPACalculator */ = {
+			isa = PBXGroup;
+			children = (
+				112C68D71D3FBFEB00CDDABF /* AppDelegate.h */,
+				112C68D81D3FBFEB00CDDABF /* AppDelegate.m */,
+				112C69131D3FD51000CDDABF /* Model */,
+				112C69141D3FD51600CDDABF /* View */,
+				112C69151D3FD51C00CDDABF /* Controller */,
+				112C68DD1D3FBFEB00CDDABF /* Main.storyboard */,
+				112C68E21D3FBFEB00CDDABF /* LaunchScreen.storyboard */,
+				112C68E01D3FBFEB00CDDABF /* Assets.xcassets */,
+				112C68E51D3FBFEB00CDDABF /* Info.plist */,
+				112C68D41D3FBFEB00CDDABF /* Supporting Files */,
+			);
+			path = GPACalculator;
+			sourceTree = "<group>";
+		};
+		112C68D41D3FBFEB00CDDABF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				111238311D427B93009B41DC /* Course.xcdatamodeld */,
+				115A7B5E1D452ADD00FE9219 /* Macros.h */,
+				11C2C5121D43F0FD007EDE8E /* UIViewController+BackButtonHandler.h */,
+				11C2C5131D43F0FD007EDE8E /* UIViewController+BackButtonHandler.m */,
+				115A7B671D45349100FE9219 /* InfoPlist.strings */,
+				112C68D51D3FBFEB00CDDABF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		112C68ED1D3FBFEB00CDDABF /* GPACalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				112C68EE1D3FBFEB00CDDABF /* GPACalculatorTests.m */,
+				112C68F01D3FBFEB00CDDABF /* Info.plist */,
+			);
+			path = GPACalculatorTests;
+			sourceTree = "<group>";
+		};
+		112C68F81D3FBFEB00CDDABF /* GPACalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				112C68F91D3FBFEB00CDDABF /* GPACalculatorUITests.m */,
+				112C68FB1D3FBFEB00CDDABF /* Info.plist */,
+			);
+			path = GPACalculatorUITests;
+			sourceTree = "<group>";
+		};
+		112C69131D3FD51000CDDABF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11CD724A1D5A34220069706B /* Course.h */,
+				11CD724B1D5A34220069706B /* Course.m */,
+				11CD724C1D5A34220069706B /* Course+CoreDataProperties.h */,
+				11CD724D1D5A34220069706B /* Course+CoreDataProperties.m */,
+				11CD724E1D5A34220069706B /* DateUtilities.h */,
+				11CD724F1D5A34220069706B /* DateUtilities.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		112C69141D3FD51600CDDABF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11CD725C1D5A34450069706B /* CourseCell.h */,
+				11CD725D1D5A34450069706B /* CourseCell.m */,
+				11CD72601D5A34450069706B /* TextFieldCell.h */,
+				11CD72611D5A34450069706B /* TextFieldCell.m */,
+				1160CA321D53B57800DF2D80 /* SettingCell.h */,
+				1160CA331D53B57800DF2D80 /* SettingCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		112C69151D3FD51C00CDDABF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11CD72651D5A34750069706B /* CoursesVC.h */,
+				11CD72661D5A34750069706B /* CoursesVC.m */,
+				11CD72671D5A34750069706B /* DetailVC.h */,
+				11CD72681D5A34750069706B /* DetailVC.m */,
+				11CD726B1D5A34750069706B /* NavigationController.h */,
+				11CD726C1D5A34750069706B /* NavigationController.m */,
+				11CD726D1D5A34750069706B /* SettingsVC.h */,
+				11CD726E1D5A34750069706B /* SettingsVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1724BB7DCF40A89604300C74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F88DB5FBE63033AE53FEDB0 /* libPods-GPACalculator.a */,
+				0806D7B646C36634AFA9352E /* libPods-GPACalculatorTests.a */,
+				40E30A4FC7C2A147DDFD6EE9 /* libPods-GPACalculatorUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EACCB9B2AAFC99793CF094E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BF550BE7478908ED3FC4EAF /* Pods-GPACalculator.debug.xcconfig */,
+				AE399F77CF387C460EA9D342 /* Pods-GPACalculator.release.xcconfig */,
+				55199130CD764B71069E3C2E /* Pods-GPACalculatorTests.debug.xcconfig */,
+				0935F9E6CDA4156DF599AA91 /* Pods-GPACalculatorTests.release.xcconfig */,
+				E36D59B5FB0EFF2532FDE000 /* Pods-GPACalculatorUITests.debug.xcconfig */,
+				98C9A33F3B464F93EA5E7388 /* Pods-GPACalculatorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		112C68D01D3FBFEB00CDDABF /* GPACalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112C68FE1D3FBFEB00CDDABF /* Build configuration list for PBXNativeTarget "GPACalculator" */;
+			buildPhases = (
+				E0214007B7E62EDE21913EAD /* [CP] Check Pods Manifest.lock */,
+				112C68CD1D3FBFEB00CDDABF /* Sources */,
+				112C68CE1D3FBFEB00CDDABF /* Frameworks */,
+				112C68CF1D3FBFEB00CDDABF /* Resources */,
+				B17B759599A9DB70049DE51E /* [CP] Embed Pods Frameworks */,
+				75DC0C3693F094CF01660895 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPACalculator;
+			productName = GPACalculator;
+			productReference = 112C68D11D3FBFEB00CDDABF /* GPACalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		112C68E91D3FBFEB00CDDABF /* GPACalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112C69011D3FBFEB00CDDABF /* Build configuration list for PBXNativeTarget "GPACalculatorTests" */;
+			buildPhases = (
+				2314088CB25774654E2ADB14 /* [CP] Check Pods Manifest.lock */,
+				112C68E61D3FBFEB00CDDABF /* Sources */,
+				112C68E71D3FBFEB00CDDABF /* Frameworks */,
+				112C68E81D3FBFEB00CDDABF /* Resources */,
+				9A478406CBD28DC3C4DC69D4 /* [CP] Embed Pods Frameworks */,
+				14F7CAB76521C7B7C55B5E05 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				112C68EC1D3FBFEB00CDDABF /* PBXTargetDependency */,
+			);
+			name = GPACalculatorTests;
+			productName = GPACalculatorTests;
+			productReference = 112C68EA1D3FBFEB00CDDABF /* GPACalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		112C68F41D3FBFEB00CDDABF /* GPACalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112C69041D3FBFEB00CDDABF /* Build configuration list for PBXNativeTarget "GPACalculatorUITests" */;
+			buildPhases = (
+				F8E3A67C0BE7A625AEFF4D44 /* [CP] Check Pods Manifest.lock */,
+				112C68F11D3FBFEB00CDDABF /* Sources */,
+				112C68F21D3FBFEB00CDDABF /* Frameworks */,
+				112C68F31D3FBFEB00CDDABF /* Resources */,
+				96A4356459A188E0B160C4A0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				112C68F71D3FBFEB00CDDABF /* PBXTargetDependency */,
+			);
+			name = GPACalculatorUITests;
+			productName = GPACalculatorUITests;
+			productReference = 112C68F51D3FBFEB00CDDABF /* GPACalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		112C68C91D3FBFEB00CDDABF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Xiao Lu";
+				TargetAttributes = {
+					112C68D01D3FBFEB00CDDABF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = K7U2974RH8;
+					};
+					112C68E91D3FBFEB00CDDABF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 112C68D01D3FBFEB00CDDABF;
+					};
+					112C68F41D3FBFEB00CDDABF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 112C68D01D3FBFEB00CDDABF;
+					};
+				};
+			};
+			buildConfigurationList = 112C68CC1D3FBFEB00CDDABF /* Build configuration list for PBXProject "GPACalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 112C68C81D3FBFEB00CDDABF;
+			productRefGroup = 112C68D21D3FBFEB00CDDABF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				112C68D01D3FBFEB00CDDABF /* GPACalculator */,
+				112C68E91D3FBFEB00CDDABF /* GPACalculatorTests */,
+				112C68F41D3FBFEB00CDDABF /* GPACalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		112C68CF1D3FBFEB00CDDABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112C68E41D3FBFEB00CDDABF /* LaunchScreen.storyboard in Resources */,
+				115A7B681D45349100FE9219 /* InfoPlist.strings in Resources */,
+				112C68E11D3FBFEB00CDDABF /* Assets.xcassets in Resources */,
+				112C68DF1D3FBFEB00CDDABF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C68E81D3FBFEB00CDDABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C68F31D3FBFEB00CDDABF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F7CAB76521C7B7C55B5E05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPACalculatorTests/Pods-GPACalculatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2314088CB25774654E2ADB14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75DC0C3693F094CF01660895 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPACalculator/Pods-GPACalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A4356459A188E0B160C4A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPACalculatorUITests/Pods-GPACalculatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A478406CBD28DC3C4DC69D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPACalculatorTests/Pods-GPACalculatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17B759599A9DB70049DE51E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPACalculator/Pods-GPACalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0214007B7E62EDE21913EAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E3A67C0BE7A625AEFF4D44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		112C68CD1D3FBFEB00CDDABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11CD72581D5A34220069706B /* DateUtilities.m in Sources */,
+				11CD72561D5A34220069706B /* Course.m in Sources */,
+				11CD72721D5A34750069706B /* NavigationController.m in Sources */,
+				11C2C5141D43F0FD007EDE8E /* UIViewController+BackButtonHandler.m in Sources */,
+				11CD72731D5A34750069706B /* SettingsVC.m in Sources */,
+				11CD72701D5A34750069706B /* DetailVC.m in Sources */,
+				1160CA341D53B57800DF2D80 /* SettingCell.m in Sources */,
+				111238331D427B93009B41DC /* Course.xcdatamodeld in Sources */,
+				11CD72571D5A34220069706B /* Course+CoreDataProperties.m in Sources */,
+				112C68D91D3FBFEB00CDDABF /* AppDelegate.m in Sources */,
+				11CD72641D5A34450069706B /* TextFieldCell.m in Sources */,
+				11CD72621D5A34450069706B /* CourseCell.m in Sources */,
+				112C68D61D3FBFEB00CDDABF /* main.m in Sources */,
+				11CD726F1D5A34750069706B /* CoursesVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C68E61D3FBFEB00CDDABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112C68EF1D3FBFEB00CDDABF /* GPACalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		112C68F11D3FBFEB00CDDABF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112C68FA1D3FBFEB00CDDABF /* GPACalculatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		112C68EC1D3FBFEB00CDDABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112C68D01D3FBFEB00CDDABF /* GPACalculator */;
+			targetProxy = 112C68EB1D3FBFEB00CDDABF /* PBXContainerItemProxy */;
+		};
+		112C68F71D3FBFEB00CDDABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112C68D01D3FBFEB00CDDABF /* GPACalculator */;
+			targetProxy = 112C68F61D3FBFEB00CDDABF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		112C68DD1D3FBFEB00CDDABF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112C68DE1D3FBFEB00CDDABF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		112C68E21D3FBFEB00CDDABF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112C68E31D3FBFEB00CDDABF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		112C68FC1D3FBFEB00CDDABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		112C68FD1D3FBFEB00CDDABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		112C68FF1D3FBFEB00CDDABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF550BE7478908ED3FC4EAF /* Pods-GPACalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K7U2974RH8;
+				INFOPLIST_FILE = GPACalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiaoJonesLu.GPAMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		112C69001D3FBFEB00CDDABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE399F77CF387C460EA9D342 /* Pods-GPACalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K7U2974RH8;
+				INFOPLIST_FILE = GPACalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiaoJonesLu.GPAMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		112C69021D3FBFEB00CDDABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55199130CD764B71069E3C2E /* Pods-GPACalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GPACalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiaoJonesLu.GPACalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPACalculator.app/GPACalculator";
+			};
+			name = Debug;
+		};
+		112C69031D3FBFEB00CDDABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0935F9E6CDA4156DF599AA91 /* Pods-GPACalculatorTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GPACalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiaoJonesLu.GPACalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPACalculator.app/GPACalculator";
+			};
+			name = Release;
+		};
+		112C69051D3FBFEB00CDDABF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36D59B5FB0EFF2532FDE000 /* Pods-GPACalculatorUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GPACalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiaoJonesLu.GPACalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GPACalculator;
+			};
+			name = Debug;
+		};
+		112C69061D3FBFEB00CDDABF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C9A33F3B464F93EA5E7388 /* Pods-GPACalculatorUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = GPACalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = XiaoJonesLu.GPACalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GPACalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		112C68CC1D3FBFEB00CDDABF /* Build configuration list for PBXProject "GPACalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C68FC1D3FBFEB00CDDABF /* Debug */,
+				112C68FD1D3FBFEB00CDDABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112C68FE1D3FBFEB00CDDABF /* Build configuration list for PBXNativeTarget "GPACalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C68FF1D3FBFEB00CDDABF /* Debug */,
+				112C69001D3FBFEB00CDDABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112C69011D3FBFEB00CDDABF /* Build configuration list for PBXNativeTarget "GPACalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C69021D3FBFEB00CDDABF /* Debug */,
+				112C69031D3FBFEB00CDDABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		112C69041D3FBFEB00CDDABF /* Build configuration list for PBXNativeTarget "GPACalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112C69051D3FBFEB00CDDABF /* Debug */,
+				112C69061D3FBFEB00CDDABF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		111238311D427B93009B41DC /* Course.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				111238321D427B93009B41DC /* Course.xcdatamodel */,
+			);
+			currentVersion = 111238321D427B93009B41DC /* Course.xcdatamodel */;
+			name = Course.xcdatamodeld;
+			path = ../Course.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 112C68C91D3FBFEB00CDDABF /* Project object */;
+}
