@@ -1,5 +1,7 @@
 # NYU GPA Monitor
-A light-weight iOS app helping New York University Abu Dbabi students calculating their GPAs, including official GPA, cumulative GPA, departmental GPA, yearly GPA. Particularly, official GPA is of great interests for NYU Abu Dhabi students, because the official GPA is not officially available until graduation, but routinely needed in internship applications, grad school applications, job application. This app offers a quick, reliable way to calculate official GPA.
+This is light-weight iOS app helping New York University Abu Dbabi students calculating their GPAs, including official GPA, cumulative GPA, departmental GPA, yearly GPA. 
+
+Official GPA is of great interests for NYU Abu Dhabi students, because the official GPA is not officially available until graduation, but routinely needed in internship applications, grad school applications, job application. This app offers a quick, reliable way to calculate official GPA.
 
 
 <p align="center">
